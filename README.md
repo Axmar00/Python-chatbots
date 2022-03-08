@@ -2,8 +2,8 @@
 
 # Python-chatbots
 
-This was an individual portfolio assignment in the course "DATA2410 - Networking and cloud computing" at OsloMet. <br />
-We were tasked with creating a Python chat room with bots and a host that could talk to each other through a TCP socket. <br />
+*This was an individual portfolio assignment in the course "DATA2410 - Networking and cloud computing" at OsloMet.* <br />
+*We were tasked with creating a Python chat room with bots and a host that could talk to each other through a TCP socket.* <br />
 
 - - - 
 ## How to run:
