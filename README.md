@@ -15,7 +15,7 @@
 5. Start client.py in the new terminals with 3 arguments: IP-address, port and name. The name decides whether you're a bot or a host.
 6. The chatroom should now be intact. The user can write whatever he/she desires, and the bot(s) will respond accordingly.
 7. The bots will have seperate responses for a set of given verbs. 
-8. To stop everything, one can simply close the terminal windows, or the host can write "SHUTDOWN". The clients and the server will notify you when somebody disconnects.
+8. To disconnect, one can simply close the terminal windows. The host can also write "SHUTDOWN" to disconnect all clients and stop the server. The server will notify the clients    when somebody disconnects.
 - - - 
 
   - **server.py: Hosts the chat room.**
@@ -53,4 +53,5 @@
       name        The name of the client. Connect as a host or a bot(Ash, Misty or Brock)
 
       optional arguments:
+      -h, --help  show this help message and exit
       ```
