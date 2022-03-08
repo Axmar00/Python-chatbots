@@ -1,18 +1,29 @@
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Logo" width="120"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Logo" width="120"/> 
 
 # Python-chatbots
 
 This was an individual portfolio assignment in the course "DATA2410 - Networking and cloud computing" at OsloMet. <br />
-We were tasked with creating a Python chat room with bots and a host that could talk to each other through a TCP socket.
+We were tasked with creating a Python chat room with bots and a host that could talk to each other through a TCP socket. <br />
 
+- - - 
 ## How to run:
-This project contains two python files:
+1. Start by running the server.py in a terminal window with the port as the argument.
+
+2. The server will then go in listen-mode and wait for connections and let us know if somebody connects.
+3. Open up at least one terminal for a bot, or as many as you see fit. Keep in mind that there are only 3 bots to choose from: Ash, Misty and Brock
+4. One must also open one terminal for the host-client, aka. the user. More hosts are allowed, but only one is recommended for optimized use.
+5. Start client.py in the new terminals with 3 arguments: IP-address, port and name. The name decides whether you're a bot or a host.
+6. The chatroom should now be intact. The user can write whatever he/she desires, and the bot(s) will respond accordingly.
+7. The bots will have seperate responses for a set of given verbs. 
+8. To stop everything, one can simply close the terminal windows, or the host can write "SHUTDOWN". The clients and the server will notify you when somebody disconnects.
+- - - 
+
   - **server.py: Hosts the chat room.**
     - Requires port number as argument:
       ```console
       python3 server.py 4242
       ```
-    - Type **server.py --h** for more info:
+    - Type **server.py -h** for more info:
       ```console
       usage: server.py [-h] port
 
@@ -26,11 +37,11 @@ This project contains two python files:
 
       ```
   - **client.py: Bots and host**
-    - Requires IP address/hostname, port number and bot name as arguments. The bot name can be whatever you want.
+    - Requires IP address/hostname, port number and client name as arguments. The client name can be anything, but will become a bot if a bot name is given.
       ```console
-      python3 client.py localhost 4242 Bob
+      python3 client.py localhost 4242 Steven
       ```
-    - Type **client.py --h** for more info:
+    - Type **client.py -h** for more info:
       ```console
       usage: client.py [-h] IP port name
 
