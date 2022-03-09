@@ -15,7 +15,7 @@ clients = []       # list of clients
 clientNames = []   # list of the clients' names   
 
 
-# function to broadcast a given message from a client to the other clients
+# broadcast a given message from a client to the other clients
 def messageAll(message, client):
     for i in clients:
         # dont send the message back to the original sender
@@ -23,7 +23,7 @@ def messageAll(message, client):
             i.send(message)
           
 
-# function to take care of the chatting inbetween the clients(host and bots)
+# chatting inbetween the clients(host and bots)
 def handle_client(client):
     while True:
         try:
@@ -53,7 +53,7 @@ def handle_client(client):
             break
 
 
-# function to set server status and connect incoming clients to the server(chat room)
+# set server status and connect incoming clients to the server(chat room)
 def receive():
     print('\nServer status: Running\nListening to connections...\n')
     while True:        
