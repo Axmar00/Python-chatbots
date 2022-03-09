@@ -81,7 +81,7 @@ def brock(verb):
     else:
         return "{}: I am uncertain...".format(name)
 
-# function that handles the messages received from other clients
+# handles the messages received from other clients
 def clientReceive():
     while True:
         msg = clientSocket.recv(1024).decode('utf-8')
@@ -130,7 +130,7 @@ def clientSend(msg):
     print(msg)
     clientSocket.send(msg.encode('utf-8'))
 
-# function that forwards a host-client's message
+# forwards a host-client's message
 def clientMessager():
     while True:
         try:
